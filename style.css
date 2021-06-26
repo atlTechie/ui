@@ -56,6 +56,10 @@ html {
   background: #e5383b;
 }
 
+a {
+  color: #d3d3d3 !important;
+}
+
 @media (min-width: 576px) {
   .items-wrapper {
     -ms-grid-rows: 1fr;

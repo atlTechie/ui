@@ -45,6 +45,10 @@ html {
   }
 }
 
+a {
+  color: $light-link !important;
+}
+
 // Media Queries
 @media (min-width: 576px) {
   .items-wrapper {
