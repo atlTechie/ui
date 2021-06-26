@@ -1,0 +1,54 @@
+body,
+html {
+  background: $bg;
+  color: $txt-light;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+#home {
+  height: calc(100vh - 71.35px);
+}
+
+.items-wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 100%;
+}
+
+.offcanvas-bottom {
+  height: 90vh;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  border: 1px solid $primary;
+  &:hover {
+    border: 1px solid $primary-hover;
+  }
+}
+
+.btn-primary {
+  background: $primary;
+  color: white;
+  &:hover {
+    background: $primary-hover;
+  }
+}
+
+.btn-outline-primary {
+  color: $primary;
+  &:hover {
+    color: white;
+    background: $primary;
+  }
+}
+
+// Media Queries
+@media (min-width: 576px) {
+  .items-wrapper {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
