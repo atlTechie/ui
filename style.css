@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;700&display=swap");
 body,
 html {
   background: #161a1d;
@@ -10,6 +11,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
 }
 
 #home {
@@ -25,12 +28,13 @@ html {
 }
 
 .offcanvas-bottom {
-  height: 90vh;
+  height: 50vh;
 }
 
 .btn-primary,
 .btn-outline-primary {
   border: 1px solid #e5383b;
+  border-radius: 2px;
 }
 
 .btn-primary:hover,
@@ -49,6 +53,7 @@ html {
 
 .btn-outline-primary {
   color: #e5383b;
+  background: transparent;
 }
 
 .btn-outline-primary:hover {
@@ -56,8 +61,18 @@ html {
   background: #e5383b;
 }
 
+.navbar-text {
+  font-weight: 700;
+}
+
+.navbar-text,
 a {
   color: #d3d3d3 !important;
+}
+
+.portfolio-item {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 @media (min-width: 576px) {

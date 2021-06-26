@@ -5,6 +5,8 @@ html {
   display: flex;
   height: 100%;
   flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
 }
 
 #home {
@@ -18,12 +20,13 @@ html {
 }
 
 .offcanvas-bottom {
-  height: 90vh;
+  height: 50vh;
 }
 
 .btn-primary,
 .btn-outline-primary {
   border: 1px solid $primary;
+  border-radius: 2px;
   &:hover {
     border: 1px solid $primary-hover;
   }
@@ -39,16 +42,24 @@ html {
 
 .btn-outline-primary {
   color: $primary;
+  background: transparent;
   &:hover {
     color: white;
     background: $primary;
   }
 }
 
+.navbar-text {
+  font-weight: 700;
+}
+.navbar-text,
 a {
   color: $light-link !important;
 }
 
+.portfolio-item {
+  transform: scale(0);
+}
 // Media Queries
 @media (min-width: 576px) {
   .items-wrapper {
